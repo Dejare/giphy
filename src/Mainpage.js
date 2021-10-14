@@ -55,6 +55,7 @@ const Mainpage = () => {
                 gifImgSrc ={singleGif.images.original.webp}
                 gifTitle={singleGif.title}
                 copyLink={singleGif.images.original.url}
+                downloadLink = {singleGif.url}
                 />
                
             )

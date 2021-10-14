@@ -1,7 +1,7 @@
 import React from 'react'
 import './gif.css'
 
-const Gif = ({gifImgSrc, gifTitle, copyLink,}) => {
+const Gif = ({gifImgSrc, gifTitle, copyLink, downloadLink}) => {
     return (
         <div className="gifContainer">
             <img src={gifImgSrc} alt="GIF Image" />
@@ -9,7 +9,7 @@ const Gif = ({gifImgSrc, gifTitle, copyLink,}) => {
 
         <div className="buttons">
             <a href={copyLink}>Copy-Link</a>
-            <a href={copyLink} download={gifTitle}>Download</a>
+            <a href={downloadLink} download>Download</a>
         </div>
         </div>
         
