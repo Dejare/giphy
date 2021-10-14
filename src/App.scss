@@ -26,6 +26,7 @@ header{
     justify-content: center;
     text-align: center;
     color: #DDF8E8;
+    padding: 2rem;
     h1{
         font-size: 4rem;
         font-weight: 700;
@@ -36,6 +37,9 @@ header{
     p{
         margin: .5rem 0rem;
         font-size: 1.3rem;
+        @media (max-width: 900px) {
+            font-size: 1rem;
+           }
     }
 }
 

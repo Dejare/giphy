@@ -39,6 +39,7 @@ header label {
           justify-content: center;
   text-align: center;
   color: #DDF8E8;
+  padding: 2rem;
 }
 
 .heroSection h1 {
@@ -55,6 +56,12 @@ header label {
 .heroSection p {
   margin: .5rem 0rem;
   font-size: 1.3rem;
+}
+
+@media (max-width: 900px) {
+  .heroSection p {
+    font-size: 1rem;
+  }
 }
 
 input {
