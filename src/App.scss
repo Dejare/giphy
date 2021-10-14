@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+//color: #DDF8E8;
+}
+html, body{
+    background: #10121a;
+}
+header{
+    margin: 2rem;
+    label{
+        font-size: 1.4rem;
+        border-bottom: 2px solid #1616ff;
+        color: #DDF8E8;
+    }
+}
+.heroSection{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #DDF8E8;
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+       @media (max-width: 900px) {
+        font-size: 2rem;
+       }
+    }
+    p{
+        margin: .5rem 0rem;
+        font-size: 1.3rem;
+    }
+}
+
+    input{
+    background: #f1f1f1;
+    border-radius: 25px;
+    border: 1px solid #1616ff;
+    padding: .5rem 2rem;
+    margin: .5rem;
+    text-align: center;
+    color: black;
+    }
+    input:focus{
+        outline: 0;
+    }
+
+.mainGifBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+.buttons{
+    display: flex;
+    a{
+        text-decoration: none;
+        // border: 2px solid blue;
+        margin: 1.5rem .5rem;
+        background: #3071ff;
+        padding: .5rem 1rem;
+        color: white;
+        border-radius: 15px;
+
+    }
+}

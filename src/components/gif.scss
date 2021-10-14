@@ -1,0 +1,50 @@
+.gifContainer{
+    margin: 2rem 1rem;
+    padding: 0rem 1rem;
+    background: #DDF8E8;
+    width: 30%;
+    height: 50vh;
+    // border: 2px solid red;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px rgba(34, 34, 34, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #10121a;
+    @media (max-width: 650px) {
+        margin: 1.5rem auto;
+        width: 80%;
+        height: 50vh;
+        padding: 1rem;
+    }
+    img{
+        width: 12rem;
+        height: 12rem;
+        display: flex;
+        margin: 1rem auto;
+        border-radius: 25px;
+        @media (max-width: 650px) {
+            width: 15rem;
+            height: 10rem;
+    }
+    p{
+        margin: .5rem 0rem;
+        color: #10121a;
+        text-align: center;
+        padding: 0rem 1rem;
+    }
+    .buttons{
+        display: flex;
+        a{
+            text-decoration: none;
+            // border: 2px solid blue;
+            margin: 1.5rem .5rem;
+            background: #3071ff;
+            padding: .5rem 1rem;
+            color: white;
+            border-radius: 15px;
+
+        }
+    }
+}}
