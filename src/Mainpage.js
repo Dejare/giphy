@@ -3,12 +3,15 @@ import './App.css'
 import Gif from './components/Gif'
 import axios from 'axios'
 import './components/gif.css'
+import Loader from './components/Loader'
+
 
 const Mainpage = () => {
 
     // APIII
     const [mainGif, setmainGif] = useState([])
     const [search, Setsearch] = useState('')
+    const [Loading, setLoading] = useState(false)
 
     const handleChange = e => {
         Setsearch(e.target.value)
@@ -16,11 +19,13 @@ const Mainpage = () => {
     const handleQuery = (e) => {
         
         e.preventDefault()
+        // setLoading(true)
 
         axios.get(`https://api.giphy.com/v1/gifs/search?api_key=nKEFKPSILLeIlqLEjqhVsRO8ShxIjfcn&q=${search}&limit=25&offset=0&rating=g&lang=en
         `)
         .then(res=> {
             console.log(res.data.data)
+            setLoading(true)
             setmainGif(res.data.data)
         })
     }
@@ -48,7 +53,7 @@ const Mainpage = () => {
         </form>
         </div>
         <div className="mainGifBox">
-        {mainGif.map(singleGif=>{
+        {Loading ? mainGif.map(singleGif=>{
             return(
                 
                 <Gif key = {singleGif.id}
@@ -56,10 +61,9 @@ const Mainpage = () => {
                 gifTitle={singleGif.title}
                 copyLink={singleGif.images.original.url}
                 downloadLink = {singleGif.url}
-                />
-               
+                /> 
             )
-        })}
+        }): <Loader />}
          </div>
         </div>
     )

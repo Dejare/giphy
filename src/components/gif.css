@@ -3,7 +3,7 @@
   padding: 0rem 1rem;
   background: #DDF8E8;
   width: 30%;
-  height: 50vh;
+  height: 52vh;
   border-radius: 30px;
   -webkit-box-shadow: 1px 1px 1px rgba(34, 34, 34, 0.753);
           box-shadow: 1px 1px 1px rgba(34, 34, 34, 0.753);
@@ -49,25 +49,35 @@
   }
 }
 
-.gifContainer img p {
+.gifContainer p {
   margin: .5rem 0rem;
   color: #10121a;
   text-align: center;
   padding: 0rem 1rem;
 }
 
-.gifContainer img .buttons {
+.gifContainer .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.gifContainer img .buttons a {
+.gifContainer .buttons a {
   text-decoration: none;
-  margin: 1.5rem .5rem;
+  margin: .5rem .5rem;
   background: #3071ff;
   padding: .5rem 1rem;
   color: white;
   border-radius: 15px;
+}
+
+.gifContainer .copy {
+  text-decoration: none;
+  margin: .5rem .5rem;
+  background: #3071ff;
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: 15px;
+  display: none;
 }
 /*# sourceMappingURL=gif.css.map */
