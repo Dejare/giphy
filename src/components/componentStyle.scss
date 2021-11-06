@@ -1,0 +1,114 @@
+html, body{
+    width: 100%;
+    min-height: 100%;
+}
+header{
+    display: flex;
+    flex-direction:  row;
+    align-items: center;
+    justify-content: space-between;
+    label{
+color: white;
+padding: 2rem;
+    }
+    .nav{
+        padding: 2rem;
+        .one{
+            width: 25px;
+            height: 2px;
+            background: white;
+            margin-bottom: .2rem;
+        }
+        .two{
+            width: 15px;
+            height: 2px;
+            background: white;
+        }
+    }
+}
+
+// FOOTER
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(-0%, -50%);
+    color: white;
+    // @media (max-height: 600px) {
+    //     height: 130vh;
+    //     text-align: center;
+    //     bottom: 0;
+    //     right: 50%;
+    // }
+}
+
+// buttons
+
+button{
+    background: none;
+    color: white;
+    margin: 0rem 1rem 1rem 0rem;
+}
+
+// HERO TEXT
+.hero-text{
+    padding: .4rem;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    h1{
+        margin-bottom: 1rem;
+    }
+    p{
+        margin-bottom: 1rem;
+        @media (min-width: 700px) {
+            width: 70%;
+        }
+    }
+}
+section{
+    min-height: 90vh;
+}
+
+// INFOCARD
+.mainInfoCard{
+    width: 100%;
+}
+.infocard{
+    text-align: left;
+    color: white;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    // width: ;
+    margin-top: 5rem;
+
+    img{
+        width: 8rem;
+    }
+    p{
+        // width: 70%;
+        // @media (max-width: 750px) {
+        //     width: 100%;
+        //     padding: 1rem;
+        // }
+    }
+
+}
+.infoSection{
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 700px) {
+        flex-direction: column;
+        // 
+    }
+}
+
+.cta{
+    text-align: center;
+    color: white;
+    margin: 5rem 0rem;
+    button{
+        margin-top: 1rem;
+    }
+}

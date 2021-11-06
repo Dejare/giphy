@@ -1,12 +1,10 @@
 import React from 'react'
 import Mainpage from './Mainpage'
 
-function App() {
+const App = () => {
   return (
     <div>
-      {/* TRENDING PAGE */}
       <Mainpage />
-      {/* search */}
     </div>
   )
 }
